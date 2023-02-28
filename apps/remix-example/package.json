@@ -1,0 +1,60 @@
+{
+  "name": "remix-example",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "run-s \"build:*\"",
+    "build:css": "pnpm run generate:css -- --minify",
+    "build:remix": "remix build",
+    "dev": "run-p \"dev:*\"",
+    "dev:css": "pnpm run generate:css -- --watch",
+    "dev:remix": "remix dev",
+    "generate:css": "npx tailwindcss -o ./app/tailwind.css",
+    "start": "remix-serve build",
+    "typecheck": "tsc",
+    "generate-docs": "typedoc app/routes/testTS.ts"
+  },
+  "dependencies": {
+    "@iconify/react": "^4.1.0",
+    "@loadable/component": "^5.15.2",
+    "@node-redis/search": "^1.0.5",
+    "@paralleldrive/cuid2": "^2.2.0",
+    "@remix-run/node": "^1.11.1",
+    "@remix-run/react": "^1.11.1",
+    "@remix-run/serve": "^1.11.1",
+    "case": "^1.6.3",
+    "cms-client": "workspace:*",
+    "cuid": "^3.0.0",
+    "currency.js": "^2.0.4",
+    "isbot": "^3.6.5",
+    "json-schema-to-zod": "^0.6.2",
+    "json-to-zod": "^1.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "redis": "^4.6.1",
+    "tozod": "^3.0.0",
+    "ts-to-zod": "^2.0.1",
+    "validator": "^13.9.0",
+    "zod": "^3.20.6",
+    "zod-to-json-schema": "^3.20.2"
+  },
+  "devDependencies": {
+    "@iconify/types": "^2.0.0",
+    "@remix-run/dev": "^1.11.1",
+    "@remix-run/eslint-config": "^1.11.1",
+    "@types/loadable__component": "^5.13.4",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "@types/validator": "^13.7.12",
+    "eslint": "^8.27.0",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.4",
+    "tsconfig": "workspace:*",
+    "typedoc": "^0.23.25",
+    "typescript": "^4.8.4"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

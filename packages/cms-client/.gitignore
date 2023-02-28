@@ -1,0 +1,15 @@
+/*
+!.changeset
+!.github
+!src
+!.gitignore
+!.npmignore
+!.nvmrc
+!.prettierrc
+!CHANGELOG.md
+!LICENSE.md
+!package.json
+!pnpm-lock.yaml
+!README.md
+!tsconfig.json
+!vitest.config.ts

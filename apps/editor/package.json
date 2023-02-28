@@ -1,0 +1,53 @@
+{
+  "name": "editor",
+  "private": true,
+  "sideEffects": false,
+  "scripts": {
+    "build": "run-s \"build:*\"",
+    "build:css": "pnpm run generate:css -- --minify",
+    "build:remix": "remix build",
+    "dev": "run-p \"dev:*\"",
+    "dev:css": "pnpm run generate:css -- --watch",
+    "dev:remix": "remix dev",
+    "generate:css": "pnpx tailwindcss -o ./app/tailwind.css",
+    "start": "remix-serve build",
+    "typecheck": "tsc"
+  },
+  "dependencies": {
+    "@node-redis/search": "^1.0.5",
+    "@paralleldrive/cuid2": "^2.2.0",
+    "@remix-run/node": "^1.12.0",
+    "@remix-run/react": "^1.12.0",
+    "@remix-run/serve": "^1.12.0",
+    "ajv": "^8.12.0",
+    "case": "^1.6.3",
+    "cuid": "^3.0.0",
+    "isbot": "^3.6.5",
+    "json-schema-to-zod": "^0.6.2",
+    "json-to-zod": "^1.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "redis": "^4.6.4",
+    "ui": "workspace:*",
+    "unflatten": "^1.0.4",
+    "zod": "^3.20.6",
+    "cms-client": "workspace:*"
+  },
+  "devDependencies": {
+    "@iconify-icon/react": "^1.0.3",
+    "@remix-run/dev": "^1.12.0",
+    "@remix-run/eslint-config": "^1.12.0",
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "eslint": "^8.27.0",
+    "eslint-config-custom": "workspace:*",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^3.2.4",
+    "tsconfig": "workspace:*",
+    "typescript": "^4.9.5"
+  },
+  "engines": {
+    "node": ">=14"
+  }
+}

@@ -31,3 +31,23 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+
+# Packages
+
+# client
+packages/client/*
+packages/client/!.changeset
+packages/client/!.github
+packages/client/!src
+packages/client/!.gitignore
+packages/client/!.npmignore
+packages/client/!.nvmrc
+packages/client/!.prettierrc
+packages/client/!CHANGELOG.md
+packages/client/!LICENSE.md
+packages/client/!package.json
+packages/client/!pnpm-lock.yaml
+packages/client/!README.md
+packages/client/!tsconfig.json
+packages/client/!vitest.config.ts
