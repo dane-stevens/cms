@@ -59,3 +59,5 @@ packages/worker/wrangler.toml
 apps/editor/sqlite.db
 
 packages/database/drizzle.config.ts
+
+examples/remix-cloudflare/.wrangler/
