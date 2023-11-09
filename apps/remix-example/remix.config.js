@@ -11,5 +11,5 @@ export default {
     port: 8003,
   },
   watchPaths: ["../../packages/cms-client"],
-  // serverDependenciesToBundle: ["cms-client"],
+  serverDependenciesToBundle: ["cms-client"],
 };

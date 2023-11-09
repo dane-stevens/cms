@@ -43,7 +43,10 @@ export default {
 			host: env.DATABASE_HOST,
 			username: env.DATABASE_USERNAME,
 			password: env.DATABASE_PASSWORD,
-			fetch: (opts, init) => fetch(new Request(opts, { ...init, cache: undefined })),
+			fetch: (opts, init) => {
+				if (init) delete init['cache'];
+				return fetch(new Request(opts, init));
+			},
 		});
 
 		const db = drizzle(connection, { schema });
@@ -52,7 +55,6 @@ export default {
 		const searchParams = url.searchParams;
 
 		const publicApiKey = request.headers.get('authorization')?.replace('Bearer ', '');
-		console.log({ publicApiKey });
 
 		const { tenantId } =
 			(await db.query.apiKeys.findFirst({ where: and(eq(apiKeys.key, String(publicApiKey)), eq(apiKeys.type, 'public')) })) || {};
