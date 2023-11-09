@@ -12,4 +12,6 @@ export default {
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // publicPath: "/build/",
+  watchPaths: ["../../packages/cms-client"],
+  serverDependenciesToBundle: ["cms-client"],
 };

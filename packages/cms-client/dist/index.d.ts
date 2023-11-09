@@ -1,10 +1,9 @@
 import * as zod from 'zod';
 import { z, ZodSchema } from 'zod';
 export { default as loadable } from '@loadable/component';
-export { Page } from './components/Page.js';
-export { default as ContentedProvider, useContented } from './components/Contented.js';
-import 'react/jsx-runtime';
-import 'react';
+import * as react_jsx_runtime from 'react/jsx-runtime';
+import * as react from 'react';
+import { ReactNode } from 'react';
 
 interface DefinitionOptions<TData> {
     name: string;
@@ -76,6 +75,22 @@ interface Components {
 interface Component {
     component: any;
 }
+
+declare function Page({ data }: {
+    data: any;
+}): react_jsx_runtime.JSX.Element;
+
+declare function ContentedProvider({ cms, editorOrigin, children, }: {
+    cms: any;
+    editorOrigin?: string;
+    children: ReactNode;
+}): react_jsx_runtime.JSX.Element;
+declare const ContentedContext: react.Context<ContentedContext>;
+interface ContentedContext {
+    cms: any | undefined;
+    isEditable: boolean;
+}
+declare const useContented: () => ContentedContext;
 
 declare const ALLOW_NAVIGATE = "ALLOW_NAVIGATE";
 declare const DRAGGING = "DRAGGING";
@@ -438,7 +453,7 @@ declare class C {
     secretApiKey: string;
     publicApiKey: string;
     components: Components;
-    constructor();
+    constructor(publicApiKey: string);
     /**
      * @param component
      * @param options - {@link https://docs.contented.design/custom-components/definition/#options Component definition options}
@@ -449,4 +464,4 @@ declare class C {
     getPageData: (request: Request) => Promise<PageDataResult>;
 }
 
-export { ALLOW_NAVIGATE, C, COMPONENT_SELECTED, DELETE, DRAGGING, DROPPED, EDIT, EventActions, HANDSHAKE, MessageEvent_AllowNavigate, MessageEvent_Delete, MessageEvent_Dragging, MessageEvent_Dropped, MessageEvent_Edit, PostMessageSchema, PostMessageSchema_Self, PostMessage_ComponentSelected, PostMessage_Dragging, PostMessage_Dropped, PostMessage_Handshake, postMessage, useListener };
+export { ALLOW_NAVIGATE, C, COMPONENT_SELECTED, ContentedProvider, DELETE, DRAGGING, DROPPED, EDIT, EventActions, HANDSHAKE, MessageEvent_AllowNavigate, MessageEvent_Delete, MessageEvent_Dragging, MessageEvent_Dropped, MessageEvent_Edit, Page, PostMessageSchema, PostMessageSchema_Self, PostMessage_ComponentSelected, PostMessage_Dragging, PostMessage_Dropped, PostMessage_Handshake, postMessage, useContented, useListener };

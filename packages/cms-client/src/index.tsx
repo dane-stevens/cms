@@ -11,7 +11,7 @@ const CONTENTED_SECRET_KEY = "sk_skr5pte9guegsgk2u7bw92uq";
 
 const CONTENTED_URL = `http://localhost:5909`;
 
-const PUBLIC_API_KEY = process.env.PUBLIC_API_KEY;
+// const PUBLIC_API_KEY = process.env.PUBLIC_API_KEY;
 
 interface PageDataResult {
   id: string;
@@ -23,13 +23,12 @@ export class C {
   secretApiKey = "";
   publicApiKey = "";
   components: Components = {};
-  constructor() {
+  constructor(publicApiKey: string) {
     if (!CONTENTED_SECRET_KEY)
       throw new Error("[CONTENTED] Missing environment variable: CONTENTED_SECRET_KEY");
-    if (!PUBLIC_API_KEY)
-      throw new Error("[CONTENTED] Missing environment variable: PUBLIC_API_KEY");
+    if (!publicApiKey) throw new Error("[CONTENTED] Missing variable: PUBLIC_API_KEY");
     this.secretApiKey = CONTENTED_SECRET_KEY + "";
-    this.publicApiKey = PUBLIC_API_KEY + "";
+    this.publicApiKey = publicApiKey + "";
   }
 
   /**
