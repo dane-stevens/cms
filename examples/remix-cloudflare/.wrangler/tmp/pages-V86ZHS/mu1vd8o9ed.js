@@ -6,8 +6,8 @@ var define_ROUTES_default = {
 };
 
 // ../../node_modules/wrangler/templates/pages-dev-pipeline.ts
-import worker from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/pages-ZmqfK3/functionsWorker-0.03481647487722461.mjs";
-export * from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/pages-ZmqfK3/functionsWorker-0.03481647487722461.mjs";
+import worker from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/pages-V86ZHS/functionsWorker-0.22270406333877446.mjs";
+export * from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/pages-V86ZHS/functionsWorker-0.22270406333877446.mjs";
 import { isRoutingRuleMatch } from "/home/skyf4ll/Documents/Websites/CMS/cms/node_modules/wrangler/templates/pages-dev-util.ts";
 var routes = define_ROUTES_default;
 var pages_dev_pipeline_default = {
@@ -32,4 +32,4 @@ var pages_dev_pipeline_default = {
 export {
   pages_dev_pipeline_default as default
 };
-//# sourceMappingURL=cafbrg24jpq.js.map
+//# sourceMappingURL=mu1vd8o9ed.js.map

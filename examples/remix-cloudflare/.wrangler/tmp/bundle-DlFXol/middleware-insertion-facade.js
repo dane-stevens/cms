@@ -1,4 +1,4 @@
-				import worker, * as OTHER_EXPORTS from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/pages-ZmqfK3/cafbrg24jpq.js";
+				import worker, * as OTHER_EXPORTS from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/pages-V86ZHS/mu1vd8o9ed.js";
 				import * as __MIDDLEWARE_0__ from "/home/skyf4ll/Documents/Websites/CMS/cms/node_modules/wrangler/templates/middleware/middleware-miniflare3-json-error.ts";
 				const envWrappers = [__MIDDLEWARE_0__.wrap].filter(Boolean);
 				const facade = {
@@ -9,7 +9,7 @@
             ...(worker.middleware ? worker.middleware : []),
 					].filter(Boolean)
 				}
-				export * from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/pages-ZmqfK3/cafbrg24jpq.js";
+				export * from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/pages-V86ZHS/mu1vd8o9ed.js";
 
 				const maskDurableObjectDefinition = (cls) =>
 					class extends cls {

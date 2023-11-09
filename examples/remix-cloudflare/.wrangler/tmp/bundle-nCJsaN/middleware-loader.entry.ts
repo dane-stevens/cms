@@ -11,10 +11,10 @@ import {
 	__facade_register__,
 } from "/home/skyf4ll/Documents/Websites/CMS/cms/node_modules/wrangler/templates/middleware/common.ts";
 
-import worker from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/bundle-GJayw9/middleware-insertion-facade.js";
+import worker from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/bundle-nCJsaN/middleware-insertion-facade.js";
 
 // We need to preserve all of the exports from the worker
-export * from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/bundle-GJayw9/middleware-insertion-facade.js";
+export * from "/home/skyf4ll/Documents/Websites/CMS/cms/examples/remix-cloudflare/.wrangler/tmp/bundle-nCJsaN/middleware-insertion-facade.js";
 
 class __Facade_ScheduledController__ implements ScheduledController {
 	#noRetry: ScheduledController["noRetry"];
