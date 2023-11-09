@@ -22,7 +22,7 @@
     "turbo": "^1.10.14"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": "18"
   },
   "packageManager": "npm@9.8.1",
   "dependencies": {
