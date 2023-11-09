@@ -14,16 +14,6 @@ import tailwind from "./tailwind.css";
 import { cms } from "./utils/cms";
 import Layout from "./layouts/default";
 
-export const meta: MetaFunction = () => {
-  return [
-    {
-      charset: "utf-8",
-      title: "Adaptive.io",
-      viewport: "width=device-width,initial-scale=1",
-    },
-  ];
-};
-
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: tailwind },
 ];
@@ -32,6 +22,8 @@ export default function App() {
   return (
     <html lang="en">
       <head>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
         <script

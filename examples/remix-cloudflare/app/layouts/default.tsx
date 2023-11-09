@@ -28,6 +28,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 type="button"
                 onClick={() => setMenuOpen(!menuOpen)}
                 className="block md:hidden"
+                aria-label={menuOpen ? "close menu" : "open menu"}
               >
                 <Icon icon="mdi:menu" style={{ fontSize: 24 }} />
               </button>
@@ -42,7 +43,7 @@ export default function Layout({ children }: { children: ReactNode }) {
                 <NavLink to="/solutions">Solutions</NavLink>
                 <NavLink to="/developers">Developers</NavLink>
                 <NavLink to="/pricing">Pricing</NavLink>
-                <Button to="/app">Go to App</Button>
+                <Button to="/">Go to App</Button>
               </div>
             </div>
           </div>

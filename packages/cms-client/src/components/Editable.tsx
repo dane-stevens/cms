@@ -124,13 +124,13 @@ export function Editable({
         return postMessageSelf({ _action: DRAGGING, ...coordinates });
         // getMessage(e)
       }}
-      // onDrop={(e) => {
-      //   const coordinates = {
-      //     x: e.pageX,
-      //     y: e.pageY,
-      //   };
-      //   // return postMessageSelf({ _action: DROPPED, ...coordinates });
-      // }}
+      onDrop={(e) => {
+        const coordinates = {
+          x: e.pageX,
+          y: e.pageY,
+        };
+        return postMessageSelf({ _action: DROPPED, id: componentData.id, ...coordinates });
+      }}
     >
       {
         // Only display dropzone if not the first child

@@ -125,6 +125,7 @@ export default function Index() {
     ? components.find((component) => component.name === editData.component)
     : null;
 
+  console.log({ currentUrl });
   return (
     <>
       <div
@@ -247,7 +248,7 @@ export default function Index() {
           >
             <iframe
               ref={iframeRef}
-              src={iframeUrl}
+              src={currentUrl}
               sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
               className="app-w-full app-h-full app-bg-white"
               onLoad={(e) => console.log(e)}

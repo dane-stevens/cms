@@ -14,7 +14,10 @@ export type HeroProps = z.infer<typeof HeroProps>;
 export default function Hero({ title, ctaUrl, ctaTitle, subtitle }: HeroProps) {
   return (
     <div className="h-[50vh] flex items-center justify-center relative z-0">
-      <div className="absolute z-0 overflow-hidden">
+      <div
+        className="absolute z-0 h-full overflow-x-clip -left-8"
+        style={{ width: "calc(100% + 64px)" }}
+      >
         <div className="rotate-45 opacity-20  absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
           <Gradient />
         </div>
