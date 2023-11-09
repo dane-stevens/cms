@@ -1,0 +1,13 @@
+version: "2"
+services:
+  redis:
+    container_name: "redis-dsmedia"
+    image: "redis/redis-stack:latest"
+    expose:
+      - "6380"
+      - "8001"
+    volumes:
+      - ./data:/data
+    ports:
+      - "6380:6379"
+      - "8009:8001"

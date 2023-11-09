@@ -1,0 +1,62 @@
+{
+  "name": "cms-client",
+  "version": "0.0.27",
+  "description": "",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.mjs"
+  },
+  "scripts": {
+    "build": "tsup --env.NODE_ENV production",
+    "lint": "eslint src/**/*",
+    "dev": "tsup --watch --env.NODE_ENV development",
+    "check-types": "tsc --noEmit"
+  },
+  "keywords": [
+    "zod",
+    "typescript",
+    "cms",
+    "headless"
+  ],
+  "homepage": "https://github.com/dane-stevens/cms-client/#readme",
+  "bugs": {
+    "url": "https://github.com/dane-stevens/cms-client/issues"
+  },
+  "peerDependencies": {
+    "@iconify/react": ">=4",
+    "@loadable/component": ">=5",
+    "react": ">=16",
+    "react-dom": ">=16",
+    "zod": ">=3.20.3",
+    "@paralleldrive/cuid2": ">=2"
+  },
+  "author": "Dane Stevens",
+  "license": "MIT",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.0",
+    "@iconify/react": "^4.1.0",
+    "@iconify/types": "^2.0.0",
+    "@loadable/component": "^5.15.3",
+    "@paralleldrive/cuid2": "^2.2.0",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^14.0.0",
+    "@types/babel__core": "^7.20.0",
+    "@types/loadable__component": "^5.13.4",
+    "@types/node": "^18.14.1",
+    "@types/react": "^18.0.28",
+    "@types/react-dom": "^18.0.11",
+    "@types/testing-library__jest-dom": "^5.14.5",
+    "@vitejs/plugin-react": "^3.1.0",
+    "happy-dom": "^8.7.2",
+    "jsdom": "^21.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^6.6.3",
+    "typescript": "^4.9.5",
+    "vitest": "^0.28.5",
+    "zod": "^3.20.6"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "database",
+  "version": "1.0.0",
+  "description": "",
+  "main": "drizzle/schema.ts",
+  "types": "drizzle/schema.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:generate": "drizzle-kit generate:mysql",
+    "db:push": "drizzle-kit push:mysql",
+    "db:studio": "drizzle-kit studio"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
+    "@types/node": "^20.9.0",
+    "drizzle-kit": "^0.19.13",
+    "drizzle-orm": "^0.28.6",
+    "typescript": "^5.2.2",
+    "tsconfig":"*"
+  }
+}

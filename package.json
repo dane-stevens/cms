@@ -1,0 +1,31 @@
+{
+  "name": "cms",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint",
+    "ci": "turbo run ci",
+    "release": "turbo run release",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "db:generate": "turbo run db:generate",
+    "db:push": "turbo run db:push"
+  },
+  "devDependencies": {
+    "eslint-config-custom": "*",
+    "prettier": "^3.0.3",
+    "turbo": "^1.10.14"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "npm@9.8.1",
+  "dependencies": {
+    "drizzle-orm": "^0.28.5"
+  }
+}

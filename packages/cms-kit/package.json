@@ -1,0 +1,24 @@
+{
+  "name": "cms-kit",
+  "version": "0.0.1",
+  "description": "cli",
+  "main": "index.ts",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "cms-kit": "./dist/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^11.1.0",
+    "figlet": "^1.7.0"
+  },
+  "devDependencies": {
+    "@types/figlet": "^1.5.8",
+    "@types/node": "^20.9.0",
+    "typescript": "^5.2.2"
+  }
+}
